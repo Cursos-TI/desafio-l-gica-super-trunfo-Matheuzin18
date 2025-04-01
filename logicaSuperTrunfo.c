@@ -127,32 +127,34 @@ int main() {
     int opcao;
 
     printf("Escolha um dos atributos a seguir para fazer a comparação:\n");
+    printf("**ATENÇÃO**\n");
+    printf("No atributo 'densidade demográfica' a cidade com o MENOR valor vence.\n");
     printf("1. População\n");
     printf("2. Área\n");
     printf("3. PIB\n");
     printf("4. Pontos Turísticos\n");
     printf("5. Densidade Demográfica\n");
-    scanf("%d", opcao);
+    scanf("%d", &opcao);
 
 
     switch (opcao) {
 
         case 1:
         if (populacao > populacao2) {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: população.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: população.\n");
             printf("A primeira cidade possui o valor população de %lu.\n", populacao);
             printf("A segunda cidade possui o valor população de %lu.\n", populacao2);
             printf("A primeira carta venceu!\n");
             } else  if (populacao2 > populacao) {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: população.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: população.\n");
             printf("A primeira cidade possui o valor população de %lu.\n", populacao);
             printf("A segunda cidade possui o valor população de %lu.\n", populacao2);
             printf("A segunda carta venceu!\n");
             } else {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: população.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: população.\n");
             printf("A primeira cidade possui o valor população de %lu.\n", populacao);
             printf("A segunda cidade possui o valor população de %lu.\n", populacao2);
             printf("Empate! Ambas as cidades possuem a mesma população.\n");
@@ -161,20 +163,20 @@ int main() {
 
         case 2:
         if (area > area2) {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: área.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: área.\n");
             printf("A primeira cidade possui o valor área de %.1fkm².\n", area);
             printf("A segunda cidade possui o valor área de %.1fkm².\n", area2);
             printf("A primeira carta venceu!\n");
             } else  if (area2 > area) {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: área.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: área.\n");
             printf("A primeira cidade possui o valor área de %.1f.\n", area);
             printf("A segunda cidade possui o valor área de %.1f.\n", area2);
             printf("A segunda carta venceu!\n");
             } else {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: área.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: área.\n");
             printf("A primeira cidade possui o valor área de %.1f.\n", area);
             printf("A segunda cidade possui o valor área de %.1f.\n", area2);
             printf("Empate! Ambas as cidades possuem a mesma área.\n");
@@ -183,20 +185,20 @@ int main() {
 
         case 3:
         if (pib > pib2) {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: PIB.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: PIB.\n");
             printf("A primeira cidade possui o valor pib de %.1f.\n", pib);
-            printf("A segunda cidade possui o valor pib de %.1fkm².\n", pib2);
+            printf("A segunda cidade possui o valor pib de %.1f.\n", pib2);
             printf("A primeira carta venceu!\n");
             } else  if (pib2 > pib) {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: PIB.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: PIB.\n");
             printf("A primeira cidade possui o valor pib de %.1f.\n", pib);
             printf("A segunda cidade possui o valor pib de %.1f.\n", pib2);
             printf("A segunda carta venceu!\n");
             } else {
-            printf("Cidades em disputa: %s e %s\n.", cidade, cidade2);
-            printf("O atributo usado na comparação foi: PIB.");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: PIB.\n");
             printf("A primeira cidade possui o valor pib de %.1f.\n", pib);
             printf("A segunda cidade possui o valor pib de %.1f.\n", pib2);
             printf("Empate! Ambas as cidades possuem o mesmo PIB.\n");
@@ -205,27 +207,51 @@ int main() {
 
         case 4:
         if (turistico > turistico2) {
-            printf("A primeira cidade venceu pois possui maior quantidade de pontos turísticos.\n");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: pontos turísticos.\n");
+            printf("A primeira cidade possui o valor pontos turísticos de %d.\n", turistico);
+            printf("A segunda cidade possui o valor pontos turísticos de %d.\n", turistico2);
+            printf("A primeira carta venceu!\n");
             } else  if (turistico2 > turistico) {
-            printf("A segunda cidade venceu pois possui maior quantidade de pontos turísticos.\n");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: pontos turísticos.\n");
+            printf("A primeira cidade possui o valor pontos turísticos de %d.\n", turistico);
+            printf("A segunda cidade possui o valor pontos turísticos de %d.\n", turistico2);
+            printf("A segunda carta venceu!\n");
             } else {
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: pontos turísticos.\n");
+            printf("A primeira cidade possui o valor pontos turísticos de %d.\n", turistico);
+            printf("A segunda cidade possui o valor pontos turísticos de %d.\n", turistico2);
             printf("Empate! Ambas as cidades possuem a mesma quantidade de pontos turísticos.\n");
             } 
             break;
 
         case 5:
-        if (DensidadePoder < DensidadePoder2) {
-            printf("A primeira cidade venceu pois possui menor densidade populacional.\n");
-            } else  if (DensidadePoder2 < DensidadePoder) {
-            printf("A segunda cidade venceu pois possui menor densidade populacional.\n");
+        if (DensidadePopulacional < DensidadePopulacional2) {
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: densidade demográfica.\n");
+            printf("A primeira cidade possui o valor densidade demográfica de %.2f.\n", DensidadePopulacional);
+            printf("A segunda cidade possui o valor densidade demográfica de %.2f.\n", DensidadePopulacional2);
+            printf("A primeira carta venceu!\n");
+            } else  if (DensidadePopulacional2 < DensidadePopulacional) {
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: densidade demográfica.\n");
+            printf("A primeira cidade possui o valor densidade demográfica de %.2f.\n", DensidadePopulacional);
+            printf("A segunda cidade possui o valor densidade demográfica de %.2f.\n", DensidadePopulacional2);
+            printf("A segunda carta venceu!\n");
             } else {
-            printf("Empate! Ambas as cidades possuem a mesma densidade populacional.\n");
+            printf("Cidades em disputa: %s e %s.\n", cidade, cidade2);
+            printf("O atributo usado na comparação foi: densidade demográfica.\n");
+            printf("A primeira cidade possui o valor densidade demográfica de %.2f.\n", DensidadePopulacional);
+            printf("A segunda cidade possui o valor densidade demográfica de %.2f.\n", DensidadePopulacional2);
+            printf("Empate! Ambas as cidades possuem a mesma quantidade de pontos turísticos.\n");
             } 
             break;
 
         default:
             printf("Opção inválida!\n");
-    }
+        }
 
     return 0;
 }
